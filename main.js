@@ -1,7 +1,7 @@
 // const API_KEY = `724a32d25d164af99927618bc2cc1b7e`;
 let newsList = [];
 const menus = document.querySelectorAll(".menus button");
-menus.forEach(menu=>addEventListener("click",(event)=>getNewsByCategory(event)))
+menus.forEach(menu =>menu.addEventListener("click",(event)=>getNewsByCategory(event)))
 
 const getLatestNews = async () => { 
         // const url = new URL(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`);
