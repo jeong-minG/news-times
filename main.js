@@ -28,8 +28,7 @@ const getNewsByKeyword = async() =>{
     const keyword = document.getElementById("search-input").value; 
     const url = new URL(`https://relaxed-liger-259fb5.netlify.app/top-headlines?country=kr&q=${keyword}`);
     const response = await fetch(url);
-    const data = await response.json();
-    console.log("keyword data", data)
+    const data = await response.json(); 
     newsList = data.articles;
     render(); 
 }
